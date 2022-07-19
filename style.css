@@ -1,0 +1,125 @@
+*{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.iamage{
+    background-image: url(pp.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    height: 20px;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 250px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #7afff0;
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    transition: 0.5s;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid #7afff0;
+    border-radius: 25px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #7afff0;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -4;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.container{
+    background-color: #7afff0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+@media only screen (min-width: 600px) {
+    width: 100%;
+     h1{
+        font-size: 80px;
+     }
+     p{
+        font-size: 50px;
+     }      
+
+    
+}
+@media (min-width: 800px) {
+    h1{
+       font-size: 1.5rem;
+       line-height: 1.5;
+    }
+}
